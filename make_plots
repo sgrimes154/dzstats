@@ -11,7 +11,7 @@ def makeplots(df,xmin,xmax,xint):
     
     N = len(df.columns)//2 # number of samples 
     
-    fig, axs = plt.subplots(2,1,sharex=False) #set up figure, probably is a better/more efficient/prettier way to do this!
+    fig, axs = plt.subplots(2,1,sharex=False) #just changed it to false, so the labels will show up on both plots
         
     # loop thru the individual samples to make all PDPs and plot all CDFs
     for j in range(N):
